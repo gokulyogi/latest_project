@@ -1,0 +1,240 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DealerMasterPage.master.cs" Inherits="site_admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Orange Mint  by Free CSS Templates</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><img src="logo.jpg" style="height: 102px; width: 302px"/>
+				<p> <a href=""></a></p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="../../index.aspx">Home</a></li>
+					<li><a href="../admin/news.aspx">News</a></li>
+					<li><a href="#">User</a></li>
+                    <li><a href="#">Contact</a></li>
+					<li>
+                        <asp:LinkButton ID="logout" runat="server" onclick="logout_Click">Logout</asp:LinkButton></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+					<div class="post">
+						<div style="clear: both;"></div>
+						<div class="entry">
+							<br />
+							<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                <table class="style1">
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp; &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                            &nbsp;<asp:Label ID="Label1" runat="server" Text="Car Brand"></asp:Label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                            <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="128px">
+                                                <asp:ListItem>Maruti Suzuki</asp:ListItem>
+                                                <asp:ListItem>Hyundai</asp:ListItem>
+                                                <asp:ListItem>Honda</asp:ListItem>
+                                                <asp:ListItem>Tata</asp:ListItem>
+                                                <asp:ListItem>Volkswagen</asp:ListItem>
+                                                <asp:ListItem>Toyota</asp:ListItem>
+                                                <asp:ListItem></asp:ListItem>
+                                                <asp:ListItem></asp:ListItem>
+                                                <asp:ListItem></asp:ListItem>
+                                                <asp:ListItem></asp:ListItem>
+                                                <asp:ListItem></asp:ListItem>
+                                                <asp:ListItem></asp:ListItem>
+                                            </asp:DropDownList>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <asp:Label ID="Label8" runat="server" Text="Car Name"></asp:Label>
+                                        </td>
+                                        <td>
+&nbsp;&nbsp;
+                                            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <asp:Label ID="Label2" runat="server" Text="Variant"></asp:Label>
+                                            &nbsp;</td>
+                                        <td>
+&nbsp;&nbsp;
+                                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                            &nbsp;<asp:Label ID="Label4" runat="server" Text="Key Features"></asp:Label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                            &nbsp;<asp:Label ID="Label9" runat="server" Text="Color"></asp:Label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                            &nbsp;&nbsp;
+                                            <asp:Label ID="Label3" runat="server" Text="Price"></asp:Label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style5">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <asp:Label ID="Label6" runat="server" Text="Image"></asp:Label>
+                                            &nbsp;</td>
+                                        <td class="style6">
+                                            &nbsp;
+                                            <asp:FileUpload ID="FileUpload2" runat="server" Width="216px" />
+                                            <br />
+&nbsp;
+                                            <asp:FileUpload ID="FileUpload3" runat="server" />
+                                            <br />
+&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style3">
+                                        </td>
+                                        <td class="style4">
+&nbsp;&nbsp;
+                                            <asp:Button ID="Button1" runat="server" Height="24px" Text="Upload" 
+                                                Width="99px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                </table>
+                            </asp:ContentPlaceHolder>
+						    <br />
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                <p>
+                                    &nbsp;</p>
+                            </asp:ContentPlaceHolder>
+                            <br />
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <br />
+                            <br />
+						</div>
+					</div>
+					<div class="post">
+					</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<div id="search" >
+							    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                                </asp:ContentPlaceHolder>
+							</div>
+							<div style="clear: both;">&nbsp;</div>
+						</li>
+						<li>
+							<h2>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </h2>
+						</li>
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+</div>
+<!-- end #footer -->
+<div align=center></div>
+    </form>
+</body>
+</html>

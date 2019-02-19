@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="site_admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Orange Mint  by Free CSS Templates</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><img src="logo.jpg" style="height: 102px; width: 302px"/>
+				<p> <a href=""></a></p>
+			</div>
+			<div id="menu" style="margin-top:-150px;">
+				<ul>
+					<li class="current_page_item"><a href="../../index.aspx">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">User</a></li>
+					<li><a href="#">Dealers</a></li>
+					<li><asp:LinkButton ID="logout" runat="server" onclick="logout_Click">Logout</asp:LinkButton></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+					<div class="post">
+						<div style="clear: both;"></div>
+						<div class="entry">
+							<br />
+							<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+						    <br />
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                <p>
+                                    &nbsp;</p>
+                            </asp:ContentPlaceHolder>
+                            <br />
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <br />
+                            <br />
+						</div>
+					</div>
+					<div class="post">
+					</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<div id="search" >
+							</div>
+							<div style="clear: both;">&nbsp;</div>
+						</li>
+						<li>
+							<h2>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </h2>
+							<p>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </p>
+						</li>
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+</div>
+<!-- end #footer -->
+<div align=center></div>
+    </form>
+</body>
+</html>
