@@ -32,4 +32,8 @@ public partial class site_user_Default : System.Web.UI.Page
     {
 
     }
+    protected void ImageButton2_Click1(object sender, ImageClickEventArgs e)
+    {
+
+    }
 }

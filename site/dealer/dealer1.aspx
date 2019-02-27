@@ -67,12 +67,12 @@
                                                 ID="Label9" runat="server" Text="Color" ForeColor="Black"></asp:Label>
         </td>
         <td>
-                                            &nbsp;
                                             <asp:TextBox ID="TextBox4" runat="server" required></asp:TextBox>
-                                            &nbsp;<asp:Button ID="btnaddc" runat="server" CausesValidation="False" 
+                                            <asp:Button ID="btnaddc" runat="server" CausesValidation="False" 
                                                 onclick="btnaddc_Click" Text="add" UseSubmitBehavior="False" 
                                                 ValidationGroup="nhgvdfcjhs" />
                                             <asp:ListBox ID="ListBox1" runat="server" Width="192px"></asp:ListBox>
+                                            
         </td>
     </tr>
     <tr>
@@ -93,52 +93,26 @@
                                             &nbsp;</td>
         <td class="style6" style="height: 233px">
                                             &nbsp;
+                                            &nbsp;
+                                            <br />
+                                            <asp:Image ID="Image1" runat="server" Height="94px" Width="103px" class="img-thumbnail"/>
+                                            <asp:Image ID="Image2" runat="server"  Height="94px" Width="103px" />
+                                            <asp:Image ID="Image3" runat="server"  Height="94px" Width="103px"  />
+                                            <asp:Image ID="Image4" runat="server"  Height="94px" Width="103px"  />
+                                            <asp:Image ID="Image5" runat="server" Height="94px" Width="103px"  />
+                                            <asp:Image ID="Image6" runat="server"  Height="94px" Width="103px" />
                                             <asp:FileUpload ID="FileUpload2" runat="server" Width="216px" />
-                                            &nbsp;
-                                            <br />
-                                            <asp:Image ID="Image1" runat="server" Height="94px" Width="103px" />
-                                            <asp:Button ID="Button3" runat="server" onclick="Button3_Click" Text="Upload" 
-                                                Width="119px" />
-            <br />&nbsp;
-                                            <asp:FileUpload ID="FileUpload3" runat="server" />
-                                            &nbsp;
-                                            <br />
-                                            <asp:Image ID="Image2" runat="server" Height="80px" Width="96px" />
-                                            <asp:Button ID="Button4" runat="server" onclick="Button4_Click" 
-                                                style="height: 26px" Text="Upload" Width="126px" />
             <br />
-                                            &nbsp;
+            <asp:FileUpload ID="FileUpload3" runat="server" />
             <asp:FileUpload ID="FileUpload4" runat="server" />
-                                            &nbsp;
-                                            <br />
-                                            <asp:Image ID="Image3" runat="server" Height="78px" Width="92px" />
-                                            <asp:Button ID="Button5" runat="server" onclick="Button5_Click" Text="Upload" 
-                                                Width="130px" />
-            <br />
-                                            &nbsp;
             <asp:FileUpload ID="FileUpload5" runat="server" />
-                                            &nbsp;
-                                            <br />
-                                            <asp:Image ID="Image4" runat="server" Height="75px" Width="99px" />
-                                            <asp:Button ID="Button6" runat="server" onclick="Button6_Click" 
-                                                style="height: 26px" Text="Upload" Width="122px" />
-            <br />
-                                            &nbsp;
             <asp:FileUpload ID="FileUpload6" runat="server" />
-                                            &nbsp;
-                                            <br />
-                                            <asp:Image ID="Image5" runat="server" Height="105px" Width="100px" />
-                                            <asp:Button ID="Button7" runat="server" onclick="Button7_Click" Text="Upload" 
-                                                Width="123px" />
-            <br />
-                                            &nbsp;
             <asp:FileUpload ID="FileUpload7" runat="server" />
                                             &nbsp;
                                             <br />
-                                            <asp:Image ID="Image6" runat="server" Height="79px" Width="102px" />
-                                            <asp:Button ID="Button1" runat="server" 
-                Height="24px" Text="Upload" 
-                                                Width="123px" onclick="Button1_Click" />
+                                            <asp:Button ID="btnupload" runat="server" onclick="btnupload_Click" 
+                                                Text="Upload All" />
+                                            <br />
         </td>
     </tr>
     <tr>
@@ -165,7 +139,7 @@
         <td class="style2" style="width: 203px">
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                 ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" 
-                SelectCommand="SELECT * FROM [dealertable]"></asp:SqlDataSource>
+                SelectCommand="SELECT * FROM [tblcars]"></asp:SqlDataSource>
         </td>
         <td>
                                             &nbsp;</td>

@@ -47,7 +47,7 @@
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                     ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" 
-                    SelectCommand="SELECT * FROM [dealertable]"></asp:SqlDataSource>
+                    SelectCommand="SELECT * FROM [tblcars]"></asp:SqlDataSource>
             </td>
             <td>
                 &nbsp;</td>

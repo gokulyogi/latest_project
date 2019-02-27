@@ -9,9 +9,13 @@
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
+                &nbsp;</td>
+            <td>
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -23,9 +27,13 @@
                 Forgot Password?</span>&nbsp;</td>
             <td style="height: 32px">
                 </td>
+            <td style="height: 32px">
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
+                &nbsp;</td>
+            <td>
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -34,12 +42,17 @@
             <td style="width: 813px">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
-                Please enter your Username &amp; phone number to search for your account. </span></td>
+                Please enter your 
+                deatils. </span></td>
+            <td>
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
+                &nbsp;</td>
+            <td>
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -48,14 +61,20 @@
             <td style="width: 813px">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
-            &nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txtname1" runat="server"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                
             </td>
+            <td>
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
+                &nbsp;</td>
+            <td>
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -63,13 +82,74 @@
         <tr>
             <td style="width: 813px">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                Phone No&nbsp;&nbsp;&nbsp;&nbsp;                 <asp:TextBox ID="txtpass1" runat="server"></asp:TextBox>
+                Phone No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;                 <asp:TextBox ID="txtpass1" runat="server"></asp:TextBox>
             </td>
+            <td>
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 813px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                E-Mail Id&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 813px">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 813px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                New Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 813px">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 813px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 813px">
+                &nbsp;</td>
+            <td>
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -77,10 +157,12 @@
         <tr>
             <td style="width: 813px">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button1" runat="server" Text="Search" onclick="Button1_Click"/>
+                <asp:Button ID="Button1" runat="server" Text="Submit" onclick="Button1_Click"/>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" Text="Clear" />
+                <asp:Button ID="Button2" runat="server" Text="Clear" onclick="Button2_Click" />
             </td>
+            <td>
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
@@ -91,10 +173,15 @@
                 </td>
             <td>
                 &nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                </td>
+            <td>
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
@@ -105,9 +192,13 @@
             </td>
             <td>
                 &nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
+                &nbsp;</td>
+            <td>
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -120,9 +211,13 @@
             </td>
             <td>
                 &nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td style="width: 813px">
+                &nbsp;</td>
+            <td>
                 &nbsp;</td>
             <td>
                 &nbsp;</td>

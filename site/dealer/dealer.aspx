@@ -36,8 +36,7 @@
                     Font-Size="Small" ForeColor="Black" Text="View Booking details"></asp:Label>
             </td>
             <td style="height: 11px">
-                <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="#0033CC">Click Me!</asp:LinkButton>
-            </td>
+                <a href="Default2.aspx">Click</a></td>
             <td style="height: 11px">
                 </td>
             <td style="height: 11px">

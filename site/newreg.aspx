@@ -67,9 +67,6 @@
                     meta:resourcekey="Label4Resource1"></asp:Label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="txtmob" runat="server" meta:resourcekey="txtmobResource1"></asp:TextBox>
-                <asp:RangeValidator ID="RangeValidator1" runat="server" 
-                    ControlToValidate="txtmob" ErrorMessage="Enter Valid Mobile Number" 
-                    MaximumValue="10" MinimumValue="10"></asp:RangeValidator>
             </td>
             <td>
                 &nbsp;</td>

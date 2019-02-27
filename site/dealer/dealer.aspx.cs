@@ -41,4 +41,8 @@ public partial class site_dealer_Default : System.Web.UI.Page
             }
         }
     }
+    protected void LinkButton2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("viewbook.aspx");
+    }
 }

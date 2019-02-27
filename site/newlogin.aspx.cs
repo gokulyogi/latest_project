@@ -71,7 +71,7 @@ public partial class site_Default3 : System.Web.UI.Page
             }
             else if (TextBox1.Text == "user      ")
             {
-                Session["user"] = "user";
+                Session["user"] = txtname1.Text;
                 Response.Redirect("user/user.aspx");
             }
 

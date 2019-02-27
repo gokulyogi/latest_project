@@ -25,7 +25,7 @@ public partial class site_user_Default3 : System.Web.UI.Page
         //SqlDataReader dr;
         //cmd.Connection = con;
         //con.Open();
-        //cmd.CommandText = "select * from dealertable where id=" + Request.QueryString["id"];
+        //cmd.CommandText = "select * from tblcars where id=" + Request.QueryString["id"];
         //dr = cmd.ExecuteReader();
         //if (dr.Read())
         //{
@@ -56,7 +56,7 @@ public partial class site_user_Default3 : System.Web.UI.Page
         {
             nxt.Visible = true;
         }
-        SqlDataAdapter sda = new SqlDataAdapter("select image1,image2,image3,image4,image5,image6 from dealertable where id=" + Request.QueryString["id"] + "", con);
+        SqlDataAdapter sda = new SqlDataAdapter("select image1,image2,image3,image4,image5,image6 from tblcars where id=" + Request.QueryString["id"] + "", con);
         DataTable dt = new DataTable();
         sda.Fill(dt);
         if (dt.Rows.Count > 0)
@@ -91,7 +91,7 @@ public partial class site_user_Default3 : System.Web.UI.Page
 
     protected void bcnf_Click(object sender, EventArgs e)
     {
-        Response.Redirect("bookcnf.aspx?k=" + Request.QueryString["id"] + "");
+        Response.Redirect("bookcnf.aspx?k=" + Request.QueryString["id"] +"&kp="+ Request.QueryString["kp"]);
     }
     protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
     {

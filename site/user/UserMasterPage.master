@@ -4,12 +4,28 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<style>
+.form-control
+{
+    display:block;
+    width:100%;
+    font-size:25px;
+    height:40px;
+    transition: .5s ease-in-out;
+    background:#ededed;
+}
+.form-control:hover
+{
+    box-shadow:2px 4px 5px 1px rgba(0,0,0,.5);
+}
+</style>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content   -type" content="text/html; charset=utf-8" />
 <title>Orange Mint  by Free CSS Templates</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,7 +36,7 @@
 				<h1><img src="logo.jpg" style="height: 102px; width: 302px"/>
 				<p> <a href=""></a></p>
 			</div>
-			<div id="menu">
+			<div id="menu" style="margin-top:-140px;">
 				<ul>
 					<li class="current_page_item"><a href="../../index.aspx">Home</a></li>
 					<li><a href="../admin/news.aspx">Auto News</a></li>

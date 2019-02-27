@@ -36,7 +36,8 @@
                     ImageUrl="~/site/user/marutilogo.jpg" PostBackUrl="~/site/user/maruti.aspx?k=Maruti Suzuki" Width="182px" onclick="ImageButton1_Click1" />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:ImageButton ID="ImageButton2" runat="server" Height="54px" 
-                    ImageUrl="~/site/user/hyundailogo.jpg" Width="145px" PostBackUrl="~/site/user/maruti.aspx?k=hyundai" />
+                    ImageUrl="~/site/user/hyundailogo.jpg" Width="145px" 
+                    PostBackUrl="~/site/user/maruti.aspx?k=hyundai" onclick="ImageButton2_Click1" />
             </td>
         </tr>
         <tr>

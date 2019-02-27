@@ -18,7 +18,7 @@
 
                 </tr>
                 </ItemTemplate>
-                <FooterTemplate>                </table></FooterTemplate>
+                <FooterTemplate></table></FooterTemplate>
                 </asp:Repeater>
 
             </td>

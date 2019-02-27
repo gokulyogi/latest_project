@@ -1,79 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site/user/UserMasterPage.master" AutoEventWireup="true" CodeFile="bookcnf.aspx.cs" Inherits="site_user_Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div class="container">
+    <div class="container">
 
-    <table style="width: 100%">
-        <tr>
-            <td>
-
-              
-                
-                        &nbsp;&nbsp;
-
-            </td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-
-    <asp:GridView ID="GridView1" runat="server" 
-        onselectedindexchanged="GridView1_SelectedIndexChanged" Height="136px" Width="191px">
-    </asp:GridView>
-
-            </td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-    </table>
+                        <div class="col-sm-4">
+                        <asp:DropDownList ID="colors" runat="server" class="form-control" 
+                                AutoPostBack="True" onselectedindexchanged="colors_SelectedIndexChanged">
+                        </asp:DropDownList>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg">
+                                <asp:Button ID="btnbook" runat="server" Text="BOOK NOW" 
+                                    onclick="btnbook_Click" />
+                                <br />
+                            </div>
+                        </div>
 
 </div>
 </asp:Content>
