@@ -43,7 +43,7 @@ protected void  Button1_Click1(object sender, EventArgs e)
 }
 protected void Button2_Click(object sender, EventArgs e)
 {
-    str = "insert into dealerreg(id,firstname,email,mob,pass,password,type) values('" + Label8.Text + "','"+txtname.Text+"','"+txtemail.Text+"','"+txtmob.Text+"','"+txtpass.Text+"','"+txtpassword.Text+"','"+TextBox1.Text+"')";
+    str = "insert into dealerreg(id,firstname,email,mob,address,city,pin,state,country,pass,password,type) values('" + Label8.Text + "','"+txtname.Text+"','"+txtemail.Text+"','"+txtmob.Text+"','"+txtadrs.Text+"','"+txtcity.Text+"','"+txtpin.Text+"','"+ddstate.Text+"','"+ddcountry.Text+"','"+txtpass.Text+"','"+txtpassword.Text+"','"+TextBox1.Text+"')";
     SqlCommand cmd = new SqlCommand(str, con);
     con.Open();
     cmd.ExecuteNonQuery();
@@ -58,6 +58,14 @@ protected void clear_Click(object sender, EventArgs e)
     txtmob.Text = "";
     txtpass.Text = "";
     txtpassword.Text = "";
+
+}
+protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+{
+
+}
+protected void TextBox5_TextChanged(object sender, EventArgs e)
+{
 
 }
 }
