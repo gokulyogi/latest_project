@@ -59,6 +59,6 @@ public partial class site_user_Default2 : System.Web.UI.Page
     {
         cd = Convert.ToInt32(colors.SelectedIndex.ToString());
         colorid = Convert.ToInt32(dt2.Rows[cd][1]);
-        Response.Write(colorid);
+        //Response.Write(colorid);
     }
 }
