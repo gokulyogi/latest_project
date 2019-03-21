@@ -13,11 +13,16 @@ public partial class site_user_Default2 : System.Web.UI.Page
     SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString);
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["user"] == "0")
+        try
         {
-            Response.Redirect("~/site/newlogin.aspx");
+            if (Session["user"] == "0")
+            {
+                Response.Redirect("~/site/newlogin.aspx");
+            }
+            TextBox1.Text = Request.QueryString.Get("k");
         }
-        TextBox1.Text = Request.QueryString.Get("k");
+        catch (Exception ee)
+        { }
     }
     protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
     {

@@ -69,9 +69,10 @@
         <td>
                                             <asp:TextBox ID="TextBox4" runat="server" required></asp:TextBox>
                                             <asp:Button ID="btnaddc" runat="server" CausesValidation="False" 
-                                                onclick="btnaddc_Click" Text="add" UseSubmitBehavior="False" 
-                                                ValidationGroup="nhgvdfcjhs" />
-                                            <asp:ListBox ID="ListBox1" runat="server" Width="192px"></asp:ListBox>
+                                                onclick="btnaddc_Click" Text="Add Color" UseSubmitBehavior="False" 
+                                                ValidationGroup="nhgvdfcjhs" class="btn btn-info" />
+                                            <asp:ListBox ID="ListBox1" runat="server" Width="192px" 
+                                                onselectedindexchanged="ListBox1_SelectedIndexChanged"></asp:ListBox>
                                             
         </td>
     </tr>
@@ -131,8 +132,8 @@
         </td>
         <td class="style4" style="height: 94px">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" Height="23px" onclick="Button2_Click" 
-                Text="Submit" Width="133px" style="margin-left: 3px" />
+            <asp:Button ID="Button2" runat="server" Height="35px" onclick="Button2_Click" 
+                Text="Submit"  Width="133px" style="margin-left: 3px" class="btn btn-success" />
         </td>
     </tr>
     <tr>

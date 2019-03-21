@@ -7,8 +7,11 @@
                 <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource1" 
                     onitemcommand="DataList2_ItemCommand" RepeatColumns="2" 
                     RepeatDirection="Horizontal" 
-                    onselectedindexchanged="DataList2_SelectedIndexChanged1" >
-
+                    onselectedindexchanged="DataList2_SelectedIndexChanged1" 
+                    class="table table-borderless" Width="1000px" 
+                    style="margin-left:-140px;background:white;border-radius:0px 100px 100px 0px;;border:0;box-shadow:2px 2px 9px 2px rgba(0,0,0,.5);" 
+        >
+   
                     <ItemTemplate>
                         <table style="width: 100%">
                             <tr>
@@ -52,7 +55,8 @@
                                     <asp:Label ID="Label10" runat="server" ForeColor="Black" 
                                         Text='<%# Eval("dlr") %>'></asp:Label>
                                     <br />
-                                    <asp:Label ID="Label12" runat="server" Text='<%# Eval("email") %>'></asp:Label>
+                                    <asp:Label ID="Label12" runat="server" Text='<%# Eval("email") %>' 
+                                        Visible="False"></asp:Label>
                                     <br />
                                 </td>
                                 <td>

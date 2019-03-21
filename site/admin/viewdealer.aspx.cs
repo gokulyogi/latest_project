@@ -20,18 +20,23 @@ public partial class site_admin_Default : System.Web.UI.Page
     SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString);
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["admin"] == "0")
+        try
         {
-            Response.Redirect("~/site/newlogin.aspx");
+            if (Session["admin"] == "0")
+            {
+                Response.Redirect("~/site/newlogin.aspx");
+            }
+            SqlDataAdapter sda = new SqlDataAdapter("select id,firstname,email,mob from dealerreg where type='dealer' and status=0", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                Repeater1.DataSource = dt;
+                Repeater1.DataBind();
+            }
         }
-        SqlDataAdapter sda = new SqlDataAdapter("select id,firstname,email,mob from dealerreg where type='dealer' and status=0", con);
-        DataTable dt = new DataTable();
-        sda.Fill(dt);
-        if (dt.Rows.Count > 0)
-        {
-            Repeater1.DataSource = dt;
-            Repeater1.DataBind();
-        }
+        catch (Exception ee)
+        { }
     }
     protected void Button3_Click(object sender, EventArgs e)
     {

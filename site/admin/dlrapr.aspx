@@ -4,7 +4,7 @@
 <div class="container" style="margin-top:-400px;">
     <asp:Repeater ID="Repeater1" runat="server">
     <HeaderTemplate>
-    <table class="table table-bodered">
+    <table class="table table-hover">
     </HeaderTemplate>
     <ItemTemplate>
     <tr><td>Dealer First Name</td><td><%#DataBinder.Eval(Container,"DataItem.firstname") %></td></tr>

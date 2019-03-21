@@ -21,22 +21,27 @@ public partial class site_user_Default3 : System.Web.UI.Page
     static int count = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
-        //SqlCommand cmd = new SqlCommand();
-        //SqlDataReader dr;
-        //cmd.Connection = con;
-        //con.Open();
-        //cmd.CommandText = "select * from tblcars where id=" + Request.QueryString["id"];
-        //dr = cmd.ExecuteReader();
-        //if (dr.Read())
-        //{
-        //    Image1.ImageUrl = dr["image1"].ToString();
-        //}
-        if (Session["user"] == "0")
+        
+        try
         {
-            Response.Redirect("~/site/newlogin.aspx");
+            //SqlCommand cmd = new SqlCommand();
+            //SqlDataReader dr;
+            //cmd.Connection = con;
+            //con.Open();
+            //cmd.CommandText = "select * from tblcars where id=" + Request.QueryString["id"];
+            //dr = cmd.ExecuteReader();
+            //if (dr.Read())
+            //{
+            //    Image1.ImageUrl = dr["image1"].ToString();
+            //}
+            if (Session["user"] == "0")
+            {
+                Response.Redirect("~/site/newlogin.aspx");
+            }
+            loadim();
         }
-        loadim();
-
+        catch (Exception ee)
+        { }
     }
     void loadim()
     {
@@ -56,12 +61,15 @@ public partial class site_user_Default3 : System.Web.UI.Page
         {
             nxt.Visible = true;
         }
-        SqlDataAdapter sda = new SqlDataAdapter("select image1,image2,image3,image4,image5,image6 from tblcars where id=" + Request.QueryString["id"] + "", con);
+        SqlDataAdapter sda = new SqlDataAdapter("select image1,image2,image3,image4,image5,image6,brand,name,variant from tblcars where id=" + Request.QueryString["id"] + "", con);
         DataTable dt = new DataTable();
         sda.Fill(dt);
         if (dt.Rows.Count > 0)
         {
             Image1.ImageUrl = dt.Rows[0][count].ToString();
+            //Label1.Text = dt.Rows[0][count+6].ToString();
+            //Label2.Text = dt.Rows[0][count + 7].ToString();
+            //Label3.Text = dt.Rows[0][count + 8].ToString();
         }
     }
     protected void Button1_Click(object sender, EventArgs e)

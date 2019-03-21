@@ -76,7 +76,7 @@
                                     <tr>
                                         <td>
                                             
-                                        <img src="ertiga.jpg" height="200" width="350" /></td>
+                                        <img src="ertiga.png" height="225" width="430" /></td>
                                     </tr>
                                     <tr>
                                         <td>

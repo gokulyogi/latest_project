@@ -67,6 +67,10 @@
                     meta:resourcekey="Label4Resource1"></asp:Label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="txtmob" runat="server" meta:resourcekey="txtmobResource1"></asp:TextBox>
+            &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator2" 
+                    runat="server" ControlToValidate="txtmob" 
+                    ErrorMessage="Enter a valid mobile number" 
+                    ValidationExpression="^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$"></asp:RegularExpressionValidator>
             </td>
             <td>
                 &nbsp;</td>
@@ -84,6 +88,8 @@
                                                     meta:resourcekey="Label3Resource1"></asp:Label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:TextBox ID="txtadrs" runat="server"></asp:TextBox>
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                    ControlToValidate="txtadrs" ErrorMessage="Required Field"></asp:RequiredFieldValidator>
                                                 </td>
             <td>
                 &nbsp;</td>
@@ -100,6 +106,8 @@
                                     <asp:Label ID="Label13" runat="server" Text="City"></asp:Label>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="txtcity" runat="server"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" 
+                    runat="server" ControlToValidate="txtcity" ErrorMessage="Required Field"></asp:RequiredFieldValidator>
                                     </td>
             <td>
                 &nbsp;</td>
@@ -173,6 +181,8 @@
                                         <asp:ListItem>Lakshadweep</asp:ListItem>
                                         <asp:ListItem>Puducherry (Pondicherry)</asp:ListItem>
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" 
+                    runat="server" ControlToValidate="ddstate" ErrorMessage="Required Field"></asp:RequiredFieldValidator>
                                     </td>
             <td>
                 &nbsp;</td>

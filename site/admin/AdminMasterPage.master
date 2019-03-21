@@ -7,7 +7,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Cardrive.com</title>
+<title>www.cardrive.com</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
 </head>
@@ -22,10 +22,10 @@
 			</div>
 			<div id="menu" style="margin-top:-150px;">
 				<ul>
-					<li class="current_page_item"><a href="../../index.aspx">Home</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">User</a></li>
-					<li><a href="#">Dealers</a></li>
+					<li class="current_page_item"><a href="page1.aspx">Home</a></li>
+					<li><a href="news.aspx">News</a></li>
+					<li><a href="viewuser.aspx">Users</a></li>
+					<li><a href="viewdealer.aspx">Dealers</a></li>
 					<li><asp:LinkButton ID="logout" runat="server" onclick="logout_Click">Logout</asp:LinkButton></li>
 				</ul>
 			</div>

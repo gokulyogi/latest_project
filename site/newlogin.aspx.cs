@@ -26,68 +26,73 @@ public partial class site_Default3 : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
 
     {
-        SqlCommand cmd1 = new SqlCommand();
-        SqlDataReader dr1;
-        cmd1.Connection = con;
-        con.Open();
-        cmd1.CommandText = "select type from dealerreg where email='" + txtname1.Text + "'";
-
-        dr1 = cmd1.ExecuteReader();
-        if (dr1.Read())
+        try
         {
-            TextBox1.Text = dr1["type"].ToString();
-        }
+            SqlCommand cmd1 = new SqlCommand();
+            SqlDataReader dr1;
+            cmd1.Connection = con;
+            con.Open();
+            cmd1.CommandText = "select type from dealerreg where email='" + txtname1.Text + "'";
 
-        con.Close();
-        
-        //SqlCommand cmd1 = new SqlCommand();
-        //SqlDataReader dr1;
-        //cmd1.Connection = con;
-        //con.Open();
-        //cmd1.CommandText = "select type from dealerreg where firstname='" + txtname1.Text + "'";
-       
-        //dr1 = cmd1.ExecuteReader();
-        //if (dr1.Read())
-        //{
-        //    TextBox1.Text = dr1["type"].ToString();
-        //}
-
-        SqlDataReader dr;
-        SqlCommand cmd = new SqlCommand();
-        con.Open();
-        string str = "select * from dealerreg where email='" + txtname1.Text + "' and pass='" + txtpass1.Text + "'";
-        DataSet ds = new DataSet();
-        ds.Clear();
-        SqlDataAdapter da = new SqlDataAdapter(str, con);
-        da.Fill(ds);
-
-        if (ds.Tables[0].Rows.Count > 0)
-        {
-
-            if (TextBox1.Text == "admin     ")
+            dr1 = cmd1.ExecuteReader();
+            if (dr1.Read())
             {
-                Session["admin"] = "admin";
-                Response.Redirect("admin/page1.aspx");
-            }
-            else if (TextBox1.Text == "user      ")
-            {
-                Session["user"] = txtname1.Text;
-                Response.Redirect("user/user.aspx");
+                TextBox1.Text = dr1["type"].ToString();
             }
 
-            else if (TextBox1.Text == "dealer    ")
-            {
-                Session["dealer"] = txtname1.Text;
-                Response.Write("<script>alert('" + txtname1.Text + "');</script>");
-                Response.Redirect("dealer/dealer.aspx");
-            }
+            con.Close();
 
+            //SqlCommand cmd1 = new SqlCommand();
+            //SqlDataReader dr1;
+            //cmd1.Connection = con;
+            //con.Open();
+            //cmd1.CommandText = "select type from dealerreg where firstname='" + txtname1.Text + "'";
+
+            //dr1 = cmd1.ExecuteReader();
+            //if (dr1.Read())
+            //{
+            //    TextBox1.Text = dr1["type"].ToString();
+            //}
+
+            SqlDataReader dr;
+            SqlCommand cmd = new SqlCommand();
+            con.Open();
+            string str = "select * from dealerreg where email='" + txtname1.Text + "' and pass='" + txtpass1.Text + "'";
+            DataSet ds = new DataSet();
+            ds.Clear();
+            SqlDataAdapter da = new SqlDataAdapter(str, con);
+            da.Fill(ds);
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+
+                if (TextBox1.Text == "admin     ")
+                {
+                    Session["admin"] = "admin";
+                    Response.Redirect("admin/page1.aspx");
+                }
+                else if (TextBox1.Text == "user      ")
+                {
+                    Session["user"] = txtname1.Text;
+                    Response.Redirect("user/user.aspx");
+                }
+
+                else if (TextBox1.Text == "dealer    ")
+                {
+                    Session["dealer"] = txtname1.Text;
+                    Response.Write("<script>alert('" + txtname1.Text + "');</script>");
+                    Response.Redirect("dealer/dealer.aspx");
+                }
+
+            }
+            else
+            {
+                Response.Write("<script>alert(' Recheck given deatils ');</script>");
+            }
+            con.Close();
         }
-        else
-        {
-            Response.Write("<script>alert(' Recheck given deatils ');</script>");
-        }
-        con.Close();
+        catch (Exception ee)
+        { }
     }
     protected void LinkButton2_Click(object sender, EventArgs e)
     {

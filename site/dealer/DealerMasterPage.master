@@ -9,7 +9,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>www.cardrive.com</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />     
 </head>
 <body>
@@ -23,10 +23,10 @@
 			</div>
 			<div id="menu" style="margin-top:-140px;">
 				<ul>
-					<li class="current_page_item"><a href="../../index.aspx">Home</a></li>
-					<li><a href="../admin/news.aspx">News</a></li>
-					<li><a href="#">User</a></li>
-                    <li><a href="#">Contact</a></li>
+					<li class="current_page_item"><a href="dealer.aspx">Home</a></li>
+					
+					<li><a href="Default2.aspx">Bookings</a></li>
+                    <li><a href="dealercontact.aspx">Contact</a></li>
 					<li>
                         <asp:LinkButton ID="logout" runat="server" onclick="logout_Click">Logout</asp:LinkButton></li>
 				</ul>
@@ -145,7 +145,7 @@
                                         <td class="style4">
 &nbsp;&nbsp;
                                             <asp:Button ID="Button1" runat="server" Height="24px" Text="Upload" 
-                                                Width="99px" />
+                                                Width="99px" onclick="Button1_Click" />
                                         </td>
                                     </tr>
                                     <tr>

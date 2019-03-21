@@ -9,7 +9,7 @@
                     
                 <asp:Repeater ID="Repeater1" runat="server" 
                     onitemcommand="Repeater1_ItemCommand">
-                <HeaderTemplate><table class="table table-bordered"></HeaderTemplate>
+                <HeaderTemplate><table class="table table-hover"></HeaderTemplate>
                 <ItemTemplate>
                 <tr><td><%#DataBinder.Eval(Container, "DataItem.firstname") %></td>
                 <td><%#DataBinder.Eval(Container, "DataItem.email") %></td>

@@ -20,8 +20,8 @@
                     Font-Bold="True" Font-Size="Small" ForeColor="Black"></asp:Label>
             </td>
             <td style="height: 80px">
-                <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="#0033CC" 
-                    PostBackUrl="~/site/dealer/dealer1.aspx">Click Me!</asp:LinkButton>
+                <a href="dealer1.aspx">Click here</a></td>
+                
             </td>
             <td style="height: 80px">
                 </td>
@@ -36,7 +36,7 @@
                     Font-Size="Small" ForeColor="Black" Text="View Booking details"></asp:Label>
             </td>
             <td style="height: 11px">
-                <a href="Default2.aspx">Click</a></td>
+                <a href="Default2.aspx">Click here</a></td>
             <td style="height: 11px">
                 </td>
             <td style="height: 11px">

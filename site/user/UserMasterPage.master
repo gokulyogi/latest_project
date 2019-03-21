@@ -36,12 +36,11 @@
 				<h1><img src="logo.jpg" style="height: 102px; width: 302px"/>
 				<p> <a href=""></a></p>
 			</div>
-			<div id="menu" style="margin-top:-140px;">
+			<div id="menu" style="margin-top:-150px;">
 				<ul>
-					<li class="current_page_item"><a href="../../index.aspx">Home</a></li>
-					<li><a href="../admin/news.aspx">Auto News</a></li>
-					<li><a href="#">Dealers</a></li>
-					<li><a href="#">Contact</a></li>
+					<li class="current_page_item"><a href="user.aspx"">Home</a></li>
+					<li><a href="vr.aspx">Notifications</a></li>
+					<li><a href="../newcontact.aspx">Contact Us</a></li>
                     <li>
                         <asp:LinkButton ID="logout" runat="server" onclick="logout_Click">Logout</asp:LinkButton></li>
 				</ul>
@@ -56,19 +55,16 @@
 					<div class="post">
 						<div style="clear: both;"></div>
 						<div class="entry">
-							<br />
 							<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                             </asp:ContentPlaceHolder>
-						    <br />
+
                             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                                <p>
-                                    &nbsp;</p>
+
                             </asp:ContentPlaceHolder>
-                            <br />
+
                             <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
                             </asp:ContentPlaceHolder>
-                            <br />
-                            <br />
+
 						</div>
 					</div>
 					<div class="post">

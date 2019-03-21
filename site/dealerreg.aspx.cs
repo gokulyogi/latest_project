@@ -20,15 +20,20 @@ public partial class site_Default : System.Web.UI.Page
     SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString);
     protected void Page_Load(object sender, EventArgs e)
     {
-        str = "select isnull(max(ID),0)+1 from dealerreg";
-        DataSet ds = new DataSet();
-        ds.Clear();
-        SqlDataAdapter da = new SqlDataAdapter(str, con);
-        da.Fill(ds);
-        if (ds.Tables[0].Rows.Count > 0)
+        try
         {
-            Label8.Text = ds.Tables[0].Rows[0][0].ToString();
+            str = "select isnull(max(ID),0)+1 from dealerreg";
+            DataSet ds = new DataSet();
+            ds.Clear();
+            SqlDataAdapter da = new SqlDataAdapter(str, con);
+            da.Fill(ds);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                Label8.Text = ds.Tables[0].Rows[0][0].ToString();
+            }
         }
+        catch (Exception ee)
+        { }
     }
     protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
     {

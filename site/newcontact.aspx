@@ -48,8 +48,9 @@
                 style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px !important; margin-left: 0px; padding: 0px; box-sizing: border-box; line-height: 1.6; color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
                         <span class="bold" 
                     style="margin: 0px; padding: 0px; box-sizing: border-box; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                Contact Phone:</span><a href="tel:01246462244" 
-                    style="margin: 0px; padding: 0px; box-sizing: border-box; outline: none; color: rgb(44, 119, 254); text-decoration: none;">0124-6462244</a></p>
+                Contact Phone:</span><a href="tel:7012772855" 
+                    
+                            style="margin: 0px; padding: 0px; box-sizing: border-box; outline: none; color: rgb(44, 119, 254); text-decoration: none;">+91-7012552855</a></p>
                     <p class="m_b-10" 
                 style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px !important; margin-left: 0px; padding: 0px; box-sizing: border-box; line-height: 1.6; color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

@@ -16,18 +16,22 @@ public partial class site_user_Default2 : System.Web.UI.Page
     SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString);
     protected void Page_Load(object sender, EventArgs e)
     {
-        SqlDataAdapter sda1 = new SqlDataAdapter("select color,colorid from color where id='" + Convert.ToInt32(Request.QueryString.Get("k")) + "'", con);
-        dt2= new DataTable();
-        sda1.Fill(dt2);
-        if (!IsPostBack)
+        try
         {
-            for (int i = 0; i < dt2.Rows.Count; i++)
+            SqlDataAdapter sda1 = new SqlDataAdapter("select color,colorid from color where id='" + Convert.ToInt32(Request.QueryString.Get("k")) + "'", con);
+            dt2 = new DataTable();
+            sda1.Fill(dt2);
+            if (!IsPostBack)
             {
-                colors.Items.Add(dt2.Rows[i][0].ToString());
+                for (int i = 0; i < dt2.Rows.Count; i++)
+                {
+                    colors.Items.Add(dt2.Rows[i][0].ToString());
+                }
             }
+            cd = Convert.ToInt32(colors.SelectedIndex.ToString());
         }
-        cd= Convert.ToInt32(colors.SelectedIndex.ToString());
-
+        catch (Exception ee)
+        { }
     }
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
@@ -42,18 +46,21 @@ public partial class site_user_Default2 : System.Web.UI.Page
     }
     protected void btnbook_Click(object sender, EventArgs e)
     {
-        colorid = Convert.ToInt32(dt2.Rows[cd][1]);
-        String babu = Request.QueryString.Get("kp");
-        string userid = Session["user"].ToString();
-        String carid=Request.QueryString.Get("k").ToString();
-        SqlCommand cmd = new SqlCommand("insert into book(userid,dealerid,carid,colorid)values('"+userid+"','"+babu+"','"+carid+"',"+colorid+")", con);
-        con.Open();
-        int x=cmd.ExecuteNonQuery();
-        if(x==1)
-        {
-                    Response.Write("<script>alert('success');</script>");
-        }
-        con.Close();
+       
+            colorid = Convert.ToInt32(dt2.Rows[cd][1]);
+            String babu = Request.QueryString.Get("kp");
+            string userid = Session["user"].ToString();
+            String carid = Request.QueryString.Get("k").ToString();
+            SqlCommand cmd = new SqlCommand("insert into book(userid,dealerid,carid,colorid)values('" + userid + "','" + babu + "','" + carid + "'," + colorid + ")", con);
+            con.Open();
+            int x = cmd.ExecuteNonQuery();
+            if (x == 1)
+            {
+                Response.Write("<script>alert('Success,Wait for the dealer's response!');</script>");
+                //Response.Redirect("http://localhost:21783/last edited on 19.2.19/site/user/user.aspx");
+            }
+            con.Close();
+       
     }
     protected void colors_SelectedIndexChanged(object sender, EventArgs e)
     {
