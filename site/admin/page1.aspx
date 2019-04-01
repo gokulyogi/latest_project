@@ -32,11 +32,11 @@
             <td>
                 <asp:Button ID="Button1" runat="server" Height="31px" Text="View Users" 
                     Width="155px" PostBackUrl="~/site/admin/viewuser.aspx" 
-                    onclick="Button1_Click" />
+                    onclick="Button1_Click" class=btn-dark />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button2" 
                     runat="server" Text="Dealer Verification" 
                     Width="161px"  PostBackUrl="~/site/admin/viewdealer.aspx" Height="30px" 
-                    onclick="Button2_Click" />
+                    onclick="Button2_Click" class=btn-dark />
             </td>
             <td>
                 &nbsp;</td>

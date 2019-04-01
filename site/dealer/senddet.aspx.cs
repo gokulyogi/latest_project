@@ -63,7 +63,7 @@ public partial class site_dealer_Default3 : System.Web.UI.Page
         date = Calendar1.SelectedDate.ToShortDateString();
         Calendar1.Visible = false;
 
-        string bb = "dear user your car will be delivered on " + date + "";
+        string bb = "Dear customer, Your request is under processing and our executive will contact you on " + date + ".";
         lbldate.Text = bb;
     }
     protected void Button2_Click(object sender, EventArgs e)

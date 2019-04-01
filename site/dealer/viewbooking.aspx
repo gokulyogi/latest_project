@@ -18,7 +18,7 @@
         <tr><td>Car Name</td><td><%#DataBinder.Eval(Container,"DataItem.name") %></td></tr>
         <tr><td>Car Variant</td><td><%#DataBinder.Eval(Container,"DataItem.variant") %></td></tr>
         <tr><td>Car Price</td><td><%#DataBinder.Eval(Container,"DataItem.price") %></td></tr>
-        <tr><td><a href="senddet.aspx?k=<%#DataBinder.Eval(Container,"DataItem.email") %>" class="btn btn-info">Give Response </a></td></tr>
+        <tr><td><a href="senddet.aspx?k=<%#DataBinder.Eval(Container,"DataItem.email") %>"  class="btn btn-info" >Give Response </a></td></tr>
         </tr>
     </ItemTemplate>
     <FooterTemplate>

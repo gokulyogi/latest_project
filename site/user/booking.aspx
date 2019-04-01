@@ -18,12 +18,12 @@
                         <table class="table table-hover">
                         </HeaderTemplate>
                         <ItemTemplate>
-                        <tr><td class="alert alert-dark">brand</td><td><%#DataBinder.Eval(Container,"DataItem.brand") %></td></tr>
-                        <tr><td class="alert alert-dark">name</td><td><%#DataBinder.Eval(Container,"DataItem.name") %></td></tr>
-                        <tr><td class="alert alert-dark">variant</td><td><%#DataBinder.Eval(Container,"DataItem.variant") %></td></tr>
-                        <tr><td class="alert alert-dark">features</td><td><%#DataBinder.Eval(Container, "DataItem.features")%></td></tr>
-                        <tr><td class="alert alert-dark">price</td><td><%#DataBinder.Eval(Container, "DataItem.price")%></td></tr>
-                        <tr><td class="alert alert-dark">specs</td><td><%#DataBinder.Eval(Container, "DataItem.specs")%></td></tr>
+                        <tr><td class="alert alert-dark">Brand</td><td><%#DataBinder.Eval(Container,"DataItem.brand") %></td></tr>
+                        <tr><td class="alert alert-dark">Car Name</td><td><%#DataBinder.Eval(Container,"DataItem.name") %></td></tr>
+                        <tr><td class="alert alert-dark">Variant</td><td><%#DataBinder.Eval(Container,"DataItem.variant") %></td></tr>
+                        <tr><td class="alert alert-dark">Key Features</td><td><%#DataBinder.Eval(Container, "DataItem.features")%></td></tr>
+                        <tr><td class="alert alert-dark">Ex-Showroom Price(INR)</td><td><%#DataBinder.Eval(Container, "DataItem.price")%></td></tr>
+                        <tr><td class="alert alert-dark">Specifications</td><td><%#DataBinder.Eval(Container, "DataItem.specs")%></td></tr>
                         </ItemTemplate>
                         <FooterTemplate></table></FooterTemplate>
                         </asp:Repeater>
